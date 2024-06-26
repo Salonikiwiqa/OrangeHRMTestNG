@@ -79,7 +79,7 @@ public class MyInfoDirectTestNG extends CommonPage{
 	 	
 		
 		
-	  @Test(priority =1, description= "This is login test", timeOut = 5000)
+	  @Test(priority =1, description= "This is login test")
 	  public void login() throws Exception {
 			  test = extent.createTest("Login Test", "This is login test");
 			  lp.login(props.getProperty("username"), props.getProperty("password"));
