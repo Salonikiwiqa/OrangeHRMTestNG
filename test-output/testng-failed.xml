@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyInfo(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.kiwiqa.testclass.MyInfoDirectTestNG">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verify"/>
+          <include name="beforeTest"/>
+          <include name="addDetails"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.kiwiqa.testclass.MyInfoDirectTestNG -->
+    </classes>
+  </test> <!-- MyInfo(failed) -->
+</suite> <!-- Failed suite [Suite] -->
