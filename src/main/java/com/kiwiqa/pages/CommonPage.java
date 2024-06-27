@@ -95,7 +95,7 @@ public class CommonPage {
     }
     
     public ExtentTest reportGenerate() {
-    	ExtentSparkReporter htmlReporter = new ExtentSparkReporter("extentReport.html");
+    	ExtentSparkReporter htmlReporter = new ExtentSparkReporter("target/reports/extentReport.html");
 		  htmlReporter.config().setTheme(Theme.STANDARD);
 	      htmlReporter.config().setDocumentTitle("Automation Report");
 	      htmlReporter.config().setReportName("OrangeHRM Myinfo Report");
