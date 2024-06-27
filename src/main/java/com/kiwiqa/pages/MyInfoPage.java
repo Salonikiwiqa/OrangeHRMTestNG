@@ -17,7 +17,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-//import org.testng.Assert;
+import org.testng.Assert;
 
 public class MyInfoPage extends CommonPage {
 
@@ -164,7 +164,7 @@ public class MyInfoPage extends CommonPage {
 		        WebElement update2 = driver.findElement(By.xpath("(//div[contains(@class, 'toast')]//p)[2]"));
 		        updateText += " " + update2.getText();
 		        System.out.println("Text from first button: " + updateText);
-//		        Assert.assertEquals(updateText, "Success Successfully Updated", "Data not updated successfully");
+		        Assert.assertEquals(updateText, "Success Successfully Updated", "Data not updated successfully");
 
 		}
 		
